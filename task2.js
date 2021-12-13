@@ -36,30 +36,6 @@ document.querySelector("#submit-btn").addEventListener("click", function () {
     bookListRow.appendChild(deleteBtn);
     bookList.appendChild(bookListRow);
 
-    let objStorage = {
-      title: newTitle,
-      author: newAuthor,
-      rating: newRating,
-      category: newCategory,
-    };
-
-    let converToStringfy = JSON.stringify(objStorage);
-
-    localStorage.setItem("myObj", converToStringfy);
-
-    let decenter = JSON.parse(localStorage.getItem("myObj"));
-
-    console.log(decenter);
-
-    // let storageTitle = title.value;
-    // let storageAuthor = author.value;
-    // let storageRating = rating.value;
-    // let storageCategory = category.value;
-    // localStorage.setItem(JSON.stringify(title), JSON.stringify(storageTitle));
-    // localStorage.setItem("author", JSON.stringify(storageAuthor));
-    // localStorage.setItem("rating", JSON.stringify(storageRating));
-    // localStorage.setItem("category", JSON.stringify(storageCategory));
-
     // Clear
     title.value = "";
     author.value = "";
@@ -72,25 +48,3 @@ document.querySelector("#submit-btn").addEventListener("click", function () {
 bookList.addEventListener("click", (e) => {
   e.target.parentElement.remove();
 });
-
-// //Storage
-
-// document.querySelector("#submit-btn").addEventListener("click", function () {
-//   let key = title.value;
-//   let value = author.value;
-
-//   if (key && value) {
-//     localStorage.setItem(key, value);
-//     location.reload();
-//   }
-
-//   for (let i = 0; i < localStorage.length; i++) {
-//     const key = localStorage.key(i);
-//     const value = localStorage.getItem(key);
-
-//     bookList.innerHTML += `${key}: ${value}`;
-//   }
-// });
-
-// let storageRating = rating.value;
-// let storageCategory = category.value;
