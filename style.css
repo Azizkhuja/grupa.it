@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --main-bg-color: rgb(2, 114, 241);
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  font-weight: 600;
+  text-align: center;
+  color: var(--main-bg-color);
+}
+input {
+  height: 40px;
+  font-size: 20px;
+  outline: none;
+  padding: 4px;
+}
+th {
+  padding: 10px;
+}
+input[type="submit"] {
+  margin: 10px 0;
+  width: 100%;
+  color: #fff;
+  background-color: var(--main-bg-color);
+  border: none;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+label {
+  margin: 5px 0px;
+}
+select {
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  background: #eee;
+  padding: 20px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.delete {
+  color: red;
+  cursor: pointer;
+  font-size: 20px;
+}

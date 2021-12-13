@@ -1,0 +1,49 @@
+:root {
+  --primary: #a84fff;
+  --dark: #131a26;
+  --secondary: #d81e5b;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+}
+h2 {
+  font-weight: 400;
+}
+h3 {
+  font-weight: 300;
+}
+.home {
+  background: var(--dark);
+  padding: 50px;
+  color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 90%;
+  position: relative;
+}
+.home button {
+  padding: 10px;
+  outline: none;
+  font-size: 20px;
+  color: #fff;
+  background: var(--secondary);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 10px;
+}
+.author {
+  position: absolute;
+  right: 10px;
+  bottom: -40px;
+  background-color: var(--primary);
+  border-radius: 20px;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 24px;
+}
